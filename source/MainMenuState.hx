@@ -28,9 +28,9 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
-	var optionShit:Array<String> = ['story mode', 'freeplay', 'options'];
+	var optionShit:Array<String> = ['freeplay', 'options'];
 	#else
-	var optionShit:Array<String> = ['story mode', 'freeplay'];
+	var optionShit:Array<String> = ['freeplay'];
 	#end
 
 	var newGaming:FlxText;
@@ -223,15 +223,15 @@ class MainMenuState extends MusicBeatState
 
 		switch (daChoice)
 		{
-			case 'story mode':
-				FlxG.switchState(new StoryMenuState());
-				trace("Story Menu Selected");
+			//case 'story mode':
+				//FlxG.switchState(new StoryMenuState());
+				//trace("Story Menu Selected");
 			
 			case 'freeplay':
 				FlxG.switchState(new FreeplayState());
 
 				trace("Freeplay Menu Selected");
-
+			
 			case 'options':
 				FlxG.switchState(new OptionsMenu());
 		}
