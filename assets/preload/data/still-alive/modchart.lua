@@ -52,13 +52,19 @@ end
 -- this gets called every beat
 function beatHit(beat) -- arguments, the current beat of the song	
 
-	if (pulse and beat % 2 == 0) then
+	if (pulse and beat >= 74 and beat <= 217 and beat % 2 == 1) then
 		actorScale = 1.15
 		for i=4,7 do
 			setActorScale(0.85, i)
 		end
 	end
-		
+	
+	if (pulse and beat >= 218 and beat <= 348 and beat % 2 == 0) then
+		actorScale = 1.15
+		for i=4,7 do
+			setActorScale(0.85, i)
+		end
+	end
 	
 	if curBeat == 12 then
 		for i = 4, 7 do
