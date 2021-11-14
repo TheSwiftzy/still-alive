@@ -731,12 +731,12 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 
-						var jessicasschnoze:FlxSprite = new FlxSprite(-475, -20); //yo uh... if ur looking at my source for da video background, ignore my variable name :/
+						var guap:FlxSprite = new FlxSprite(-475, -20); 
 
 						var video:MP4Handler = new MP4Handler();
-						video.playMP4(Paths.video('background'), null, jessicasschnoze);
-						jessicasschnoze.scale.set(1.37, 1.37);
-						add(jessicasschnoze);
+						video.playMP4(Paths.video('background'), null, guap);
+						guap.scale.set(1.37, 1.37);
+						add(guap);
 						
 				}
 			default:
